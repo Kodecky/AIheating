@@ -71,7 +71,7 @@ body{
     transform: translate(-50%, -25%) rotate(-1800deg);
   }
   to{
-    font-size:62.5;
+    font-size:6rem;
     transform: translate(-50%, -25%) rotate(0);
   }
 }
@@ -258,5 +258,16 @@ body{
   }
   .config-container{
     height:70%;
+  }
+
+  @keyframes appear2{
+    from{
+      font-size:0;
+      transform: translate(-50%, -25%) rotate(-1800deg);
+    }
+    to{
+      font-size:4rem;
+      transform: translate(-50%, -25%) rotate(0);
+    }
   }
 }
