@@ -63,7 +63,7 @@ body{
   animation-name: appear2;
   animation-duration: 1.5s;
   animation-delay: 1s;
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
 }
 @keyframes appear2{
   from{
@@ -98,8 +98,8 @@ body{
 }
 .log-container .btn-confirm{
   width: 12rem;
+  height:4rem;
   transition: .5s;
-  padding: 1rem;
 }
 .log-container .btn-confirm:hover{
   background-color: #b33939;
@@ -110,7 +110,7 @@ body{
   position: absolute;
   top: 0;
   left: 0;
-  width:10rem;
+  width:100%;
   height:100%;
 }
 
