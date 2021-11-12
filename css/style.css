@@ -99,6 +99,7 @@ body{
 .log-container .btn-confirm{
   width: 12rem;
   transition: .5s;
+  padding: 1rem;
 }
 .log-container .btn-confirm:hover{
   background-color: #b33939;
