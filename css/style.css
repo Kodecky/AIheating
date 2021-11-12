@@ -1,0 +1,252 @@
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  line-height: 1.7;
+  padding: 3rem;
+} 
+
+.container,
+.container-config{
+  width: 100%;
+  max-width: 144rem;
+  height: calc(100vh - 6rem);
+  background-image: linear-gradient(to right bottom,#b8e994, #78e08f);
+  margin-left: auto;
+  margin-right: auto
+}
+.header,
+.header-config{
+  width: 100%;
+  height: 40%;
+  position: relative;
+  text-align: center;
+}
+.logo-container{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Audiowide", display;
+}
+.logo-span-big{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20rem;
+  color:#273c75;
+  animation-name: appear;
+  animation-duration: 5s;
+}
+@keyframes appear{
+  from {opacity: 0.0;}
+  to {opacity: 1;}
+}
+.logo-span-small{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  font-size: 6rem;
+  letter-spacing: .3rem;
+  color: #b33939;
+  animation-name: appear2;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+}
+@keyframes appear2{
+  from{
+    font-size:0;
+    transform: translate(-50%, -25%) rotate(-1800deg);
+  }
+  to{
+    font-size:62.5;
+    transform: translate(-50%, -25%) rotate(0);
+  }
+}
+
+
+
+.log-container{
+  width: 100%;
+  height: 60%;
+  text-align: center;
+}
+.log-container p{
+  margin-bottom: 2rem;
+}
+.log-container input{
+  padding: 1rem;
+  border-radius: .5rem;
+}
+.log-container .btn-confirm{
+  width: 12rem;
+  transition: .5s;
+}
+.log-container .btn-confirm:hover{
+  background-color: #b33939;
+  cursor: pointer;
+}
+.log-container .example-link{
+  width:10rem;
+  height:100%;
+}
+
+
+/* ekran konfiguracji */
+.nav{
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+.nav ul{
+  list-style-type: none;
+  width: 100%;
+}
+.nav ul li{
+  float: left;
+  padding: 1rem 2rem;
+}
+.nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;
+}
+/* .nav .nav-link{
+  position: relative;
+}
+.nav .nav-link::before{
+  content: '';
+  height: .2rem;
+  width: 1rem;
+  background-color: #111;
+  position: relative;
+} */
+
+.nav-mobile{
+  display: none;
+}
+.burger{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #b33939;
+  border: 1px solid black;
+  border-radius: 2rem;
+  z-index: 2;
+}
+.burger .line{
+  font-size: 6rem;
+  font-family: serif;
+  font-weight: bold;
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -56%);
+  
+}
+.burger .line::after{
+  content: '_';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -42%);
+}
+.burger .line::before{
+  content: '_';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -58%);
+}
+.pushed-btn{
+  background-image: linear-gradient(to right bottom,#b8e994, #78e08f);
+}
+
+.nav-mobile-list{
+  background-color: #273c75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: .5s;
+}
+.nav-hidden{
+  top: -100vh;
+}
+
+.config-container{
+  overflow-x: hidden;
+  width: 30rem;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 1rem;
+  /* background-color: burlywood; */
+
+}
+/* .config-container{
+  text-align: center;
+} */
+
+.config-container p{
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.config-container input{
+  padding: .5rem;
+  border-radius: .5rem;
+  margin-left: .5rem;
+}
+.config-container .btn-confirm{
+  width: 12rem;
+  transition: .5s;
+}
+.config-container .btn-confirm:hover{
+  background-color: #b33939;
+  cursor: pointer;
+}
+
+@media (max-width:767px){
+  body{
+    padding: 0;
+  }
+  .header-config{
+    height:30%;
+  }
+  .logo-span-big{
+    font-size: 12rem;
+  }
+  .logo-span-small{
+    font-size: 4rem;
+  }
+  .nav{
+    display: none;
+  }
+  .nav-mobile{
+    display: block;
+  }
+  .container,
+  .container-config{
+    height: 100vh;
+  }
+  .config-container{
+    height:70%;
+  }
+}
