@@ -90,6 +90,12 @@ body{
   padding: 1rem;
   border-radius: .5rem;
 }
+.log-par-btn{
+  width: 12rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
 .log-container .btn-confirm{
   width: 12rem;
   transition: .5s;
@@ -99,6 +105,10 @@ body{
   cursor: pointer;
 }
 .log-container .example-link{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
   width:10rem;
   height:100%;
 }
