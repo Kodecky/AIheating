@@ -25,6 +25,8 @@ body{
   margin-left: auto;
   margin-right: auto
 }
+
+/* ------nagłówek i logo na każdej stronie---------- */
 .header,
 .header-config{
   width: 100%;
@@ -71,7 +73,7 @@ body{
   to {opacity: 1;}
 }
 
-
+/* -----inputy ekranu logowania------ */
 .log-container{
   width: 100%;
   height: 60%;
@@ -84,21 +86,28 @@ body{
   padding: 1rem;
   border-radius: .5rem;
 }
+
+/*----paragraf z przyciskiem z ekranu logowania-------*/
 .log-par-btn{
   width: 12rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
-.log-container .btn-confirm{
+
+/* -------przyciski--------- */
+.log-container .btn-confirm,
+.config-container .btn-confirm{
   width: 12rem;
   height: 3.5rem;
   transition: .5s;
 }
-.log-container .btn-confirm:hover{
+.log-container .btn-confirm:hover,
+.config-container .btn-confirm:hover{
   background-color: #b33939;
   cursor: pointer;
 }
+/* -------przejście z ekranu logowania do ekranu konfiguracji bez hasła------- */
 .log-container .example-link{
   display: block;
   position: absolute;
@@ -109,7 +118,8 @@ body{
 }
 
 
-/* ---------ekran konfiguracji---------- */
+/* ---------ekrany konfiguracji---------- */
+/* -------nawigacja wersji desktopowej--------- */
 .nav{
   position: absolute;
   top: 0;
@@ -134,6 +144,7 @@ body{
   color: #b33939;
 }
 
+/* -----navigacja wersji mobilnej------ */
 .nav-mobile{
   display: none;
 }
@@ -153,7 +164,6 @@ body{
   font-family: serif;
   font-weight: bold;
   position: absolute;
-  /* top: 50%; */
   left: 50%;
   transform: translate(-50%, -56%);
   
@@ -187,6 +197,7 @@ body{
   list-style-type: none;
   padding-top: 15rem;
 }
+/* --------dynamiczna klasa pokazująca/ukrywająca nawigację mobilną------- */
 .nav-hidden{
   top: -100vh;
 }
@@ -200,6 +211,8 @@ body{
   padding: 3.5rem 0;
 }
 
+/* ------inputy na każdej stronie--------- */
+
 .config-container{
   overflow-x: hidden;
   width: 30rem;
@@ -207,8 +220,6 @@ body{
   margin-left: auto;
   margin-right: auto;
   padding-right: 1.2rem;
-  /* background-color: burlywood; */
-
 }
 
 .config-container p{
@@ -220,15 +231,6 @@ body{
   padding: .5rem;
   border-radius: .5rem;
   margin-left: .5rem;
-}
-.config-container .btn-confirm{
-  width: 12rem;
-  height: 3.5rem;
-  transition: .5s;
-}
-.config-container .btn-confirm:hover{
-  background-color: #b33939;
-  cursor: pointer;
 }
 
 @media (max-width:767px){
