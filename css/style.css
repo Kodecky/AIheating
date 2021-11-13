@@ -48,10 +48,6 @@ body{
   animation-name: appear;
   animation-duration: 5s;
 }
-@keyframes appear{
-  from {opacity: 0.0;}
-  to {opacity: 1;}
-}
 .logo-span-small{
   position: absolute;
   top: 50%;
@@ -61,21 +57,19 @@ body{
   letter-spacing: .3rem;
   color: #b33939;
   animation-name: appear2;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
   animation-delay: 1s;
   animation-fill-mode: backwards;
 }
-@keyframes appear2{
-  from{
-    font-size:0;
-    transform: translate(-50%, -25%) rotate(-1800deg);
-  }
-  to{
-    font-size:6rem;
-    transform: translate(-50%, -25%) rotate(0);
-  }
-}
 
+@keyframes appear{
+  from {opacity: 0}
+  to {opacity: 1;}
+}
+@keyframes appear2{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
 
 .log-container{
@@ -98,7 +92,7 @@ body{
 }
 .log-container .btn-confirm{
   width: 12rem;
-  height:4rem;
+  padding: .8rem 0;
   transition: .5s;
 }
 .log-container .btn-confirm:hover{
@@ -135,16 +129,6 @@ body{
   font-size: 2rem;
   font-weight: 900;
 }
-/* .nav .nav-link{
-  position: relative;
-}
-.nav .nav-link::before{
-  content: '';
-  height: .2rem;
-  width: 1rem;
-  background-color: #111;
-  position: relative;
-} */
 
 .nav-mobile{
   display: none;
@@ -227,6 +211,7 @@ body{
 }
 .config-container .btn-confirm{
   width: 12rem;
+  padding: .8rem 0;
   transition: .5s;
 }
 .config-container .btn-confirm:hover{
@@ -262,13 +247,7 @@ body{
   }
 
   @keyframes appear2{
-    from{
-      font-size:0;
-      transform: translate(-50%, -25%) rotate(-1800deg);
-    }
-    to{
-      font-size:4rem;
-      transform: translate(-50%, -25%) rotate(0);
-    }
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 }
