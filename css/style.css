@@ -16,13 +16,23 @@ body{
   padding: 3rem;
 } 
 
+:root{
+  --kolor-niebieski-ciemny: #0a3d62;
+  --kolor-niebieski-jasny: #3c6382;
+  --kolor-zielony-ciemny: #78e08f;
+  --kolor-zielony-jasny: #b8e994;
+  --kolor-czerwony: #b33939;
+  --kolor-czarny: #333;
+  --kolor-biały: #bbb;
+  --czcionka-logo: "Audiowide";
+}
 
 .container,
 .container-config{
   width: 100%;
   max-width: 144rem;
   height: calc(100vh - 6rem);
-  background-image: linear-gradient(to right bottom,#b8e994, #78e08f);
+  background-image: linear-gradient(to right bottom,var(--kolor-zielony-jasny), var(--kolor-zielony-ciemny));
   margin-left: auto;
   margin-right: auto
 }
@@ -39,7 +49,7 @@ body{
   position: relative;
   width: 100%;
   height: 100%;
-  font-family: "Audiowide", display;
+  font-family: var(--czcionka-logo), display;
 }
 .logo-span-big{
   position: absolute;
@@ -47,7 +57,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20rem;
-  color:#0a3d62;
+  color:var(--kolor-niebieski-ciemny);
   animation-name: appear;
   animation-duration: 5s;
 }
@@ -58,7 +68,7 @@ body{
   transform: translate(-50%, -25%);
   font-size: 6rem;
   letter-spacing: .3rem;
-  color: #b33939;
+  color: var(--kolor-czerwony);
   animation-name: appear2;
   animation-duration: 2.5s;
   animation-delay: 1s;
@@ -105,9 +115,10 @@ body{
 }
 .log-container .btn-confirm:hover,
 .config-container .btn-confirm:hover{
-  background-color: #b33939;
+  background-color: var(--kolor-czerwony);
   cursor: pointer;
 }
+
 /* -------przejście z ekranu logowania do ekranu konfiguracji bez hasła------- */
 .log-container .example-link{
   display: block;
@@ -135,14 +146,14 @@ body{
   padding: 1rem 2rem;
 }
 .nav ul li a{
-  color: #333;
+  color: var(--kolor-czarny);
   text-decoration: none;
   font-size: 2rem;
   font-weight: 900;
   transition: .3s;
 }
 .nav ul li a:hover{
-  color: #b33939;
+  color: var(--kolor-czerwony);
 }
 
 /* -----navigacja wersji mobilnej------ */
@@ -155,8 +166,8 @@ body{
   right: 2rem;
   width: 5rem;
   height: 5rem;
-  background-color: #b33939;
-  border: 1px solid black;
+  background-color: var(--kolor-czerwony);
+  border: 1px solid var(--kolor-czarny);
   border-radius: 2rem;
   z-index: 2;
 }
@@ -184,11 +195,11 @@ body{
   transform: translate(-50%, -58%);
 }
 .pushed-btn{
-  background-image: linear-gradient(to right bottom,#b8e994, #78e08f);
+  background-image: linear-gradient(to right bottom,var(--kolor-zielony-jasny), var(--kolor-zielony-ciemny));
 }
 
 .nav-mobile-list{
-  background-image: linear-gradient(to right bottom,#3c6382, #0a3d62);
+  background-image: linear-gradient(to right bottom,var(--kolor-niebieski-jasny), var(--kolor-niebieski-ciemny));
   position: absolute;
   top: 0;
   left: 0;
@@ -198,6 +209,7 @@ body{
   list-style-type: none;
   padding-top: 15rem;
 }
+
 /* --------dynamiczna klasa pokazująca/ukrywająca nawigację mobilną------- */
 .nav-hidden{
   top: -100vh;
@@ -206,14 +218,13 @@ body{
   text-decoration: none;
 }
 .nav-mobile-list .nav-link-span{
-  color: #bbb;
+  color: var(--kolor-biały);
   font-size: 2rem;
   display: block;
   padding: 3.5rem 0;
 }
 
 /* ------inputy na każdej stronie--------- */
-
 .config-container{
   overflow-x: hidden;
   width: 30rem;
