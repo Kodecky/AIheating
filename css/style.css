@@ -193,7 +193,7 @@ body{
 .nav-mobile-list li a{
   text-decoration: none;
 }
-.nav-link-span{
+.nav-mobile-list .nav-link-span{
   color: #bbb;
   font-size: 2rem;
   display: block;
