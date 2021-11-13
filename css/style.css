@@ -92,7 +92,7 @@ body{
 }
 .log-container .btn-confirm{
   width: 12rem;
-  padding: .8rem 0;
+  height: 3.5rem;
   transition: .5s;
 }
 .log-container .btn-confirm:hover{
@@ -223,7 +223,7 @@ body{
 }
 .config-container .btn-confirm{
   width: 12rem;
-  padding: .8rem 0;
+  height: 3.5rem;
   transition: .5s;
 }
 .config-container .btn-confirm:hover{
