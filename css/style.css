@@ -44,7 +44,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20rem;
-  color:#273c75;
+  color:#0a3d62;
   animation-name: appear;
   animation-duration: 5s;
 }
@@ -109,7 +109,7 @@ body{
 }
 
 
-/* ekran konfiguracji */
+/* ---------ekran konfiguracji---------- */
 .nav{
   position: absolute;
   top: 0;
@@ -124,10 +124,14 @@ body{
   padding: 1rem 2rem;
 }
 .nav ul li a{
-  color: black;
+  color: #333;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 900;
+  transition: .3s;
+}
+.nav ul li a:hover{
+  color: #b33939;
 }
 
 .nav-mobile{
@@ -173,16 +177,27 @@ body{
 }
 
 .nav-mobile-list{
-  background-color: #273c75;
+  background-image: linear-gradient(to right bottom,#3c6382, #0a3d62);
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
   transition: .5s;
+  list-style-type: none;
+  padding-top: 15rem;
 }
 .nav-hidden{
   top: -100vh;
+}
+.nav-mobile-list li a{
+  text-decoration: none;
+}
+.nav-link-span{
+  color: #bbb;
+  font-size: 2rem;
+  display: block;
+  padding: 2rem 0;
 }
 
 .config-container{
@@ -191,13 +206,10 @@ body{
   text-align: right;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 1rem;
+  padding-right: 1.2rem;
   /* background-color: burlywood; */
 
 }
-/* .config-container{
-  text-align: center;
-} */
 
 .config-container p{
   margin-bottom: 2rem;
