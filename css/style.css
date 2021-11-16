@@ -148,7 +148,7 @@ body{
 .nav ul li a{
   color: var(--kolor-czarny);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 900;
   transition: .3s;
 }
